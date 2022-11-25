@@ -1,0 +1,378 @@
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transition: .2s;
+}
+header .inner {
+  font-family: 'Lobster', cursive;
+  position: absolute;
+  width: 130px;
+  height: 100%;
+  background-color: #eee;
+  border: 1px solid #000;
+}
+header .inner .logo {
+  width: 130px;
+  height: 15%;
+}
+header .inner .logo #main {
+  width: 110px;
+  height: 110px;
+  padding: 15% 7%;
+  transition: .2s;
+}
+header .inner .logo #main:hover {
+  transform: scale(1.2);
+}
+header .inner .web_developer {
+  font-size: 20px;
+  text-align: center;
+  height: 10%;
+  transition: .2s;
+}
+header .inner .menu {
+  position: absolute;
+  top: 40%;
+  width: 130px;
+  height: 25%;
+}
+header .inner .menu .items{
+  font-size: 25px;
+  text-align: center;
+  height: 20%;
+}
+header .inner .menu .items .item {
+  height: 25%;
+  margin: 1px;
+  padding: 20% 0;
+}
+header .inner .menu .items .item .about {
+  transform: scale(1.5) skewX(20deg);
+}
+header .inner .menu .items .item .about a{
+  color: #7a6ccf;
+}
+header .inner .menu .items .item .my_skills {
+  transition: .2s;
+}
+header .inner .menu .items .item .my_skills a:hover{
+  color: #7a6ccf;
+}
+header .inner .menu .items .item .contact {
+  transition: .2s;
+}
+header .inner .menu .items .item .contact a:hover {
+  color: #7a6ccf;
+}
+header .inner .menu .items .item .my_skills:hover {
+  transform: scale(1.3) skewX(15deg);
+}
+header .inner .menu .items .item .contact:hover {
+  transform: scale(1.3) skewX(15deg);
+}
+header .inner .github{
+  position: absolute;
+  bottom: 13%;
+  width: 130px;
+  height: 10%;
+}
+header .inner .github #github_img{
+  position: relative;
+  padding: 20% 34%;
+  width: 40px;
+  height: 40px;
+  transition: .2s;
+}
+header .inner .github #github_img:hover{
+  transform: scale(1.3);
+}
+
+/*section*/
+@keyframes greetings {
+  0%{
+    top: -100%;
+  }
+  100%{
+    top: 20.5%;
+  }
+}
+
+@keyframes brief {
+  0%{
+    bottom: -100%;
+  }
+  100%{
+    bottom: 21.5%;
+  }
+}
+@keyframes opacity {
+  0%{
+    opacity: 0;
+    scale: 3;
+  }
+  100%{
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes move {
+  0%{
+    right: -100%;
+  }
+  100%{
+    right: 19%;
+  }
+}
+section {
+  position: fixed;
+  left: 132px;
+  width: 100%;
+  height: 100%;
+}
+section .inner_1 {
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #ccc;
+}
+section .inner_1 .html {
+  position: relative;
+  top: 3%;
+  left: 2%;
+  font-size: 22px;
+  color: #a9a4a1;
+}
+section .inner_1 .close_html {
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  font-size: 22px;
+  color: #a9a4a1;
+}
+section .inner_1 .body {
+  position: relative;
+  top: 5%;
+  left: 2%;
+  font-size: 25px;
+  color: #a9a4a1;
+}
+section .inner_1 .close_body {
+  position: absolute;
+  bottom: 8%;
+  left: 2%;
+  font-size: 25px;
+  color: #a9a4a1;
+}
+section .inner_1 .h2 {
+  position: absolute;
+  top: 17%;
+  left: 3%;
+  font-size: 22px;
+  color: #a9a4a1;
+}
+section .inner_1 .close_h2 {
+  position: absolute;
+  top: 23%;
+  left: 3%;
+  font-size: 25px;
+  color: #a9a4a1;
+}
+section .inner_1 .greetings {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: -100%;
+  left: 5%;
+  color: #4c4c4c;
+  animation: greetings 2s ease-out;
+  animation-delay: 1s ;
+  animation-fill-mode: forwards;
+}
+section .inner_1 .p {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  font-size: 25px;
+  color: #a9a4a1;
+}
+section .inner_1 .close_p {
+  position: absolute;
+  bottom: 17%;
+  left: 3%;
+  font-size: 25px;
+  color: #a9a4a1;
+}
+section .inner_1 .brief{
+  font-family: 'Do Hyeon', sans-serif;
+  position: absolute;
+  bottom: -100%;
+  left: 5%;
+  font-size: 18px;
+  color: #4c4c4c;
+  animation: brief 2s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode:forwards ;
+}
+section .inner_1 .madel1{
+  position: absolute;
+  top: 26%;
+  left: 7%;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 55px;
+  width: 265px;
+  height: 46px;
+  perspective: 265px;
+  opacity: 0;
+  animation: opacity .5s ease-in-out;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+section .inner_1 .madel1 .front{
+  position: absolute;
+  color: #969691;
+  backface-visibility: hidden;
+  transition: .5s;
+}
+section .inner_1 .madel1:hover .front {
+  transform: rotateY(180deg);
+}
+section .inner_1 .madel1 .back {
+  text-align: center;
+  color: #f1ece1;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  transition: .5s;
+}
+section .inner_1 .madel1:hover .back {
+  transform: rotateY(0deg);
+}
+section .inner_1 .madel2 {
+  position: absolute;
+  top: 31%;
+  left: 33.5%;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 55px;
+  width: 190px;
+  height: 55px;
+  perspective: 250px;
+  opacity: 0;
+  animation: opacity .5s ease-in-out;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+section .inner_1 .madel2 .front {
+  position: absolute;
+  color: #969691;
+  backface-visibility: hidden;
+  transition: .5s;
+}
+section .inner_1 .madel2:hover .front {
+  transform: rotateX(180deg);
+}
+section .inner_1 .madel2 .back {
+  text-align: center;
+  color: #f1ece1;
+  transform: rotateX(-180deg);
+  backface-visibility: hidden;
+  transition: .5s;
+}
+section .inner_1 .madel2:hover .back {
+  transform: rotateX(0deg);
+}
+section .inner_1 .madel3 {
+  position: absolute;
+  top: 36%;
+  left: 52.5%;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 55px;
+  width: 385px;
+  height: 55px;
+  perspective: 450px;
+  opacity: 0;
+  animation: opacity .5s ease-in-out;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+}
+section .inner_1 .madel3 .front {
+  position: absolute;
+  color: #969691;
+  backface-visibility: hidden;
+  transition: .5s;
+}
+section .inner_1 .madel3:hover .front {
+  transform: rotateY(180deg);
+}
+section .inner_1 .madel3 .back {
+  text-align: center;
+  color: #f1ece1;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  transition: .5s;
+}
+section .inner_1 .madel3:hover .back {
+  transform: rotateY(0deg);
+}
+section .inner_2 {
+  background: linear-gradient(90deg, #ccc, #aeaeae);
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+section .inner_2 .circle1 {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #aaa;
+  opacity: 0;
+  animation: opacity 1s ease-in-out;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+}
+section .inner_2 .circle2 {
+  position: absolute;
+  top: 3%;
+  right: 25%;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #ccc;
+  opacity: 0;
+  animation: opacity 1s ease-in-out;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+section .inner_2 #introduce_me {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  top: 3%;
+  left: 21%;
+  opacity: 0;
+  animation: opacity 1s ease-in-out;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+}
+section .inner_2 .greetings_simple {
+  font-family: 'Do Hyeon', sans-serif;
+  position: absolute;
+  top: 40%;
+  right: -100%;
+  width: 82%;
+  height: 25%;
+  animation: move 1.5s ease-in-out;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
