@@ -1,4 +1,211 @@
-
+/* media */
+@media screen and (max-width:500px) {
+  body{
+    opacity: 0;
+  }
+}
+@media screen and (max-width:700px) {
+  section {
+    opacity: 0;
+  }
+}
+@media screen and (max-height:400px) {
+  body{
+    opacity: 0;
+  }
+}
+@media screen and (max-height:390px){
+  header .inner .github #github_img {
+    scale: .7;
+  }
+}
+@media screen and (max-height:800px) {
+  header .inner #main {
+    scale: .6;
+  }
+  header .web_developer {
+    opacity: 0;
+  }
+  header .inner .menu .items .item {
+    transform: translateY(-40px);
+  }
+  section .inner_1 .html{
+    opacity: 0;
+  }
+  section .inner_1 .close_html{
+    opacity: 0;
+  }
+  section .inner_1 .body {
+    opacity: 0;
+  }
+  section .inner_1 .close_body {
+    opacity: 0;
+  }
+  section .inner_1 .h2 {
+    opacity: 0;
+  }
+  section .inner_1 .close_h2 {
+    opacity: 0;
+  }
+  section .inner_1 .greetings {
+    transform: translateY(-70px);
+  }
+  section .inner_1 .brief {
+    transform: translateY(50px) translateX(20px)scale(1.1);
+  }
+  section .inner_1 .p {
+    opacity: 0;
+  }
+  section .inner_1 .close_p {
+    opacity: 0;
+  }
+  section .inner_1 .madel1{
+    transform: translateY(-50px) translateX(-40px);
+    
+  }
+  section .inner_1 .madel2{
+    transform: translateY(-50px) translateX(-40px);
+  }
+  section .inner_1 .madel3{
+    transform: translateY(-50px) translateX(-40px);
+  }
+  section .inner_2 .circle1 {
+    transform: rotateY(90deg);
+  }
+  section .inner_2 .circle2 {
+    transform: rotateY(90deg);
+  }
+  section .inner_2 #introduce_me {
+    transform: rotateY(90deg);
+  }
+  section .inner_2 .greetings_simple{
+    transform: translateY(-100px) translateX(10px) scale(1.1);
+  }
+}
+@media screen and (max-height: 680px) {
+  section .inner_2 .greetings_simple {
+    transform: translateY(-150px);
+  }
+  section .inner_1 .madel1{
+    transform: scale(.8) translateY(-100px);
+  }
+  section .inner_1 .madel2{
+    transform: scale(.8) translateY(-100px);
+  }
+  section .inner_1 .madel3{
+    transform: scale(.8) translateY(-100px);
+  }
+}
+@media  screen and (max-height:510px) {
+  section .inner_1 .greetings {
+    transform: translateY(-70px);
+  }
+  section .inner_1 .madel1 {
+    transform: rotateY(90deg);
+  }
+  section .inner_1 .madel2 {
+    transform: rotateY(90deg);
+  }
+  section .inner_1 .madel3 {
+    transform: rotateY(90deg);
+  }
+  section .inner_2 .greetings_simple {
+    transform: translateY(-170px);
+  }
+}
+@media screen and (max-width: 1660px) {
+  section .inner_1 .html{
+    opacity: 0;
+  }
+  section .inner_1 .close_html{
+    opacity: 0;
+  }
+  section .inner_1 .body {
+    opacity: 0;
+  }
+  section .inner_1 .close_body {
+    opacity: 0;
+  }
+  section .inner_1 .h2 {
+    opacity: 0;
+  }
+  section .inner_1 .close_h2 {
+    opacity: 0;
+  }
+  section .inner_1 .p {
+    opacity: 0;
+  }
+  section .inner_1 .close_p {
+    opacity: 0;
+  }
+  section .inner_1 .greetings {
+    transform: translateX(-20px);
+  }
+  section .inner_1 .brief {
+    transform: translateX(-20px);
+  }
+  section .inner_1 .madel1 {
+    transform: scale(.9);
+  }
+  section .inner_1 .madel2 {
+    transform: scale(.9);
+  }
+  section .inner_1 .madel3 {
+    transform: scale(.9);
+  }
+}
+@media screen and (max-width: 1560px) {
+  section .inner_1 .madel1{
+    transform: translateX(-40px) scale(.9);
+  }
+  section .inner_1 .madel2{
+    transform: translateX(-40px) scale(.9);
+  }
+  section .inner_1 .madel3{
+    transform: translateX(-40px) scale(.9);
+  }
+}
+@media screen and (max-width: 1380px) {
+  section .inner_1 .madel1{
+    transform: translateX(-40px) scale(.8);
+  }
+  section .inner_1 .madel2{
+    transform: translateX(-40px) scale(.8);
+  }
+  section .inner_1 .madel3{
+    transform: translateX(-40px) scale(.8);
+  }
+}
+@media screen and (max-width: 1300px) {
+  section .inner_1 .madel1{
+    transform: rotateX(90deg);
+  }
+  section .inner_1 .madel2{
+    transform: rotateX(90deg);
+  }
+  section .inner_1 .madel3{
+    transform: rotateX(90deg);
+  }
+}
+@media screen and (max-width: 1100px) {
+  section .inner_2 #introduce_me {
+    transform: translateX(-90px);
+  }
+}
+@media screen and (max-width: 900px){
+  section .inner_2 .greetings_simple {
+    opacity: 0;
+  }
+  section .inner_1 .greetings {
+    transform: scale(.9);
+  }
+  section .inner_1 .brief {
+    transform: scale(.9);
+  }
+}
+body{
+  background-color: #ccc;
+}
 a{
   text-decoration: none;
   color: #000;
@@ -148,6 +355,7 @@ section .inner_1 .html {
   left: 2%;
   font-size: 22px;
   color: #a9a4a1;
+  transition: .2s;
 }
 section .inner_1 .close_html {
   position: absolute;
@@ -155,6 +363,7 @@ section .inner_1 .close_html {
   left: 2%;
   font-size: 22px;
   color: #a9a4a1;
+  transition: .2s;
 }
 section .inner_1 .body {
   position: relative;
@@ -162,6 +371,7 @@ section .inner_1 .body {
   left: 2%;
   font-size: 25px;
   color: #a9a4a1;
+  transition: .2s;
 }
 section .inner_1 .close_body {
   position: absolute;
@@ -169,6 +379,7 @@ section .inner_1 .close_body {
   left: 2%;
   font-size: 25px;
   color: #a9a4a1;
+  transition: .2s;
 }
 section .inner_1 .h2 {
   position: absolute;
@@ -176,6 +387,7 @@ section .inner_1 .h2 {
   left: 3%;
   font-size: 22px;
   color: #a9a4a1;
+  transition: .2s;
 }
 section .inner_1 .close_h2 {
   position: absolute;
@@ -183,6 +395,7 @@ section .inner_1 .close_h2 {
   left: 3%;
   font-size: 25px;
   color: #a9a4a1;
+  transition: .2s;
 }
 section .inner_1 .greetings {
   font-family: 'Do Hyeon', sans-serif;
@@ -194,6 +407,7 @@ section .inner_1 .greetings {
   animation: greetings 2s ease-out;
   animation-delay: 1s ;
   animation-fill-mode: forwards;
+  transition: .2s;
 }
 section .inner_1 .p {
   position: absolute;
@@ -201,6 +415,7 @@ section .inner_1 .p {
   left: 3%;
   font-size: 25px;
   color: #a9a4a1;
+  transition: .2s;
 }
 section .inner_1 .close_p {
   position: absolute;
@@ -208,6 +423,7 @@ section .inner_1 .close_p {
   left: 3%;
   font-size: 25px;
   color: #a9a4a1;
+  transition: .2s;
 }
 section .inner_1 .brief{
   font-family: 'Do Hyeon', sans-serif;
@@ -219,11 +435,13 @@ section .inner_1 .brief{
   animation: brief 2s ease-out;
   animation-delay: 1s;
   animation-fill-mode:forwards ;
+  transition: .2s;
 }
 section .inner_1 .madel1{
   position: absolute;
   top: 26%;
   left: 7%;
+  transition: .5s;
   font-family: 'Do Hyeon', sans-serif;
   font-size: 55px;
   width: 265px;
@@ -257,6 +475,7 @@ section .inner_1 .madel2 {
   position: absolute;
   top: 31%;
   left: 33.5%;
+  transition: .5s;
   font-family: 'Do Hyeon', sans-serif;
   font-size: 55px;
   width: 190px;
@@ -290,6 +509,7 @@ section .inner_1 .madel3 {
   position: absolute;
   top: 36%;
   left: 52.5%;
+  transition: .5s;
   font-family: 'Do Hyeon', sans-serif;
   font-size: 55px;
   width: 385px;
@@ -333,6 +553,7 @@ section .inner_2 .circle1 {
   width: 300px;
   height: 300px;
   border-radius: 100%;
+  transition: .5s;
   background-color: #aaa;
   opacity: 0;
   animation: opacity 1s ease-in-out;
@@ -346,6 +567,7 @@ section .inner_2 .circle2 {
   width: 300px;
   height: 300px;
   border-radius: 100%;
+  transition: .5s;
   background-color: #ccc;
   opacity: 0;
   animation: opacity 1s ease-in-out;
@@ -360,6 +582,7 @@ section .inner_2 #introduce_me {
   top: 3%;
   left: 21%;
   opacity: 0;
+  transition: .5s;
   animation: opacity 1s ease-in-out;
   animation-delay: 5.5s;
   animation-fill-mode: forwards;
@@ -371,6 +594,7 @@ section .inner_2 .greetings_simple {
   right: -100%;
   width: 82%;
   height: 25%;
+  transition: .5s;
   animation: move 1.5s ease-in-out;
   animation-delay: 5s;
   animation-fill-mode: forwards;
