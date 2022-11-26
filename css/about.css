@@ -85,15 +85,7 @@
   section .inner_2 .greetings_simple {
     transform: translateY(-150px);
   }
-  section .inner_1 .madel1{
-    transform: scale(.8) translateY(-100px);
-  }
-  section .inner_1 .madel2{
-    transform: scale(.8) translateY(-100px);
-  }
-  section .inner_1 .madel3{
-    transform: scale(.8) translateY(-100px);
-  }
+
 }
 @media  screen and (max-height:510px) {
   section .inner_1 .greetings {
