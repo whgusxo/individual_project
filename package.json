@@ -14,7 +14,7 @@
     "parcel-plugin-static-files-copy": "^2.6.0"
   },
   "stateicFiles": {
-    "staticPath":"stateic"
-  }
+    "staticPath": "stateic"
+  },
+  "dependencies": {}
 }
-
