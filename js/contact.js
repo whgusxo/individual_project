@@ -1,7 +1,7 @@
-gsap.to('#introduce_me', .3, {
-  delay: .2,
-  y:-5,
-  x: 5,
+gsap.to('#handSmallHeart', 3, {
+  delay: 5,
+  y: -10,
   repeat: -1,
-  yoyo: true
+  yoyo: true,
+  ease: Power1.easeInOut
 })
